@@ -1,5 +1,7 @@
 // script.js
 
+console.log("JS loaded beginning.")
+
 document.addEventListener("DOMContentLoaded", function() {
     const menu = document.getElementById("menu");
     const submenu = document.getElementById("submenu");
