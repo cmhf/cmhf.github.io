@@ -1,5 +1,6 @@
 // script.js
 
+/*
 console.log("JS loaded beginning.")
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -29,3 +30,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+*/
