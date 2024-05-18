@@ -4,10 +4,19 @@
 
 body {
     background-color: #ffffff;
-    background-image: url("back.png");
-    background-size: 100px 1000px;
+    background-image: url("assets/images/back.png");
+    background-size: 1px 1000px;
     font-family: "Kode Mono", Arial, sans-serif;
     font-weight: 500;
+}
+
+#music_button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
 }
 
 .animate_hover {
