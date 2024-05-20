@@ -17,11 +17,24 @@ body {
     width: 100px;
     height: 100px;
     cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#music_button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
 }
 
 .animate_hover {
     animation-name: hover;
     animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.animate_hover_slow {
+    animation-name: hover;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -32,15 +45,25 @@ body {
     animation-fill-mode: forwards;
 }
 
+.animate_flash {
+    animation: flash 0.5s ease-in-out;
+}
+
 @keyframes hover {
-    0% { transform: translateY(0px);}
-    50% { transform: translateY(15px);}
-    100% { transform: translateY(0px);}
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(15px);}
+    100% {transform: translateY(0px);}
 }
 
 @keyframes slide-in {
     0% {transform: translateX(-100%); opacity: 0;}
     100% {transform: translateX(0%); opacity: 1;}
+}
+
+@keyframes flash {
+    0% {filter: brightness(1);}
+    50% {filter: brightness(2);}
+    100% {filter: brightness(1);}
 }
 
 h1 {

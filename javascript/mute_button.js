@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     const audio = document.getElementById("music_BG");
     const muteButton = document.getElementById("music_button");
-
     
     muteButton.addEventListener('click', () => {
         if (audio.muted) {
@@ -12,4 +11,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
             muteButton.src = "assets/images/unmute_button.png";
         }
     });
+
+    muteButton.classList.add("animate_flash");
+    muteButton.addEventListener('animationend', () => {
+        muteButton.classList.remove('flash');
+    }, {once: true});
 });
