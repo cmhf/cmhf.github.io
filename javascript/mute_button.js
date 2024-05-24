@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             audio.muted = true;
             muteButton.src = "assets/images/unmute_button.png";
         }
+        console.log(audio.muted);
     });
 
     muteButton.classList.add("animate_flash");

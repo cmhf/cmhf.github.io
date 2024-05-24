@@ -6,15 +6,21 @@
         <meta charset="UTF-8">
         <meta name=""viewport" content=""width=device-width, initial-scale="1.0">
         <title>Colton Federighi</title>
+        <link rel=icon type="image/x-icon" href="assets/images/head.png">
+        <script src="javascript/audio.js"></script>
     </head>
 
     <body>
-        <audio id="music_BG" src="assets/audio/bg_music.mp3" autoplay loop></audio>
+        <audio id="music_BG" src="assets/audio/bg_music.mp3" autoplay loop muted></audio>
         
         <h1 class="animate_hover">Colton Federighi</h1>
         <p class="animate_slide_in">I'm an aspiring computer science tech company owner.</p>
         
-        <img id="music_button" src="assets/images/mute_button.png" alt="Mute music" onclick="toggleMute()" class="animate_hover_slow">
+        <div id="container">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <img id="music_button" src="assets/images/mute_button.png" alt="Mute music" class="animate_hover_slow">
         
         <script src="javascript/mute_button.js"></script>
     </body>

@@ -2,6 +2,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Oswald:wght@200..700&display=swap');
 
+#container {
+    position: absolute;
+    left: 0;
+    background: #00000000;
+    width: 100%;
+    height: 10%
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000000;
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background-color: #ffffff;
     background-image: url("assets/images/back.png");
