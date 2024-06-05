@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <audio id="music_BG" src="assets/audio/bg_music.mp3" autoplay loop muted></audio>
+        <audio id="music_BG" src="assets/audio/bg_music.mp3" loop="true"></audio>
         
         <h1 class="animate_hover">Colton Federighi</h1>
         <p class="animate_slide_in">I'm an aspiring computer science tech company owner.</p>
@@ -20,8 +20,10 @@
             <canvas id="canvas"></canvas>
         </div>
 
-        <img id="music_button" src="assets/images/mute_button.png" alt="Mute music" class="animate_hover_slow">
+        <img id="music_button" src="assets/images/pause.png" alt="Mute music" class="animate_hover_slow">
         
+        <script src="javascript/audio.js"></script>
+
         <script src="javascript/mute_button.js"></script>
     </body>
 </html>

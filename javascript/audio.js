@@ -35,6 +35,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         requestAnimationFrame(animate);
     }
+
+    animate()
 });
 
 /*
