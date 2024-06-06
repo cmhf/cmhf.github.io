@@ -37,6 +37,21 @@ body {
     z-index: 1;
 }
 
+#desmos_button {
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
+
+#desmos_button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
 
 #music_button:hover {
     transform: scale(1.1);

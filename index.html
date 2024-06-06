@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Site Cycle B-->
+<!--Site Cycle A-->
 <html lang="en">
     <head>
         <link rel="stylesheet"href="css_sheet.css">
@@ -7,8 +7,12 @@
         <meta name=""viewport" content=""width=device-width, initial-scale="1.0">
         <title>Colton Federighi</title>
         <link rel=icon type="image/x-icon" href="assets/images/head.png">
+
+        <!-- Import scripts -->
+        
         <script src="javascript/audio.js"></script>
         <script src="javascript/mute_button.js"></script>
+        <script src="javascript/hyperlink_desmos_button.js"></script>
     </head>
 
     <body>
@@ -20,7 +24,15 @@
             <canvas id="canvas"></canvas>
             <img class="cover" src="assets/images/cover.png">
         </div>
+        <!-- Bottom Buttons -->
         <img id="music_button" src="assets/images/play.png" alt="Pause / Play Music" class="animate_hover_slow animate_flash">
+        <a href="https://www.desmos.com/">
+            <img id="desmos_button" src="assets/images/desmos/icon anim start.png" alt="Desmos Page" class="animate_hover_slow animate_flash">
+        </a>
+        <a href="https://www.blender.org/">
+            <img id="blender_button" src="assets/images/blender/blender.png" alt="Blender Page" class="animate_hover_slow animate_flash">
+        </a>
+        <!-- Audio -->
         <audio id="music_BG" src="assets/audio/bg_music.mp3" loop="true"></audio>
     </body>
 </html>
