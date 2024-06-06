@@ -8,22 +8,19 @@
         <title>Colton Federighi</title>
         <link rel=icon type="image/x-icon" href="assets/images/head.png">
         <script src="javascript/audio.js"></script>
+        <script src="javascript/mute_button.js"></script>
     </head>
 
     <body>
-        <audio id="music_BG" src="assets/audio/bg_music.mp3" loop="true"></audio>
-        
-        <h1 class="animate_hover">Colton Federighi</h1>
-        <p class="animate_slide_in">I'm an aspiring computer science tech company owner.</p>
-        
-        <div id="container">
-            <canvas id="canvas"></canvas>
+        <div class="bg_div">
+            <h1 class="animate_hover">Colton Federighi</h1>
+            <p class="animate_hover_p">10th Grade AP CS Principles Student</p>
         </div>
-
-        <img id="music_button" src="assets/images/pause.png" alt="Mute music" class="animate_hover_slow">
-        
-        <script src="javascript/audio.js"></script>
-
-        <script src="javascript/mute_button.js"></script>
+        <div id="container" height="50%">
+            <canvas id="canvas"></canvas>
+            <img class="cover" src="assets/images/cover.png">
+        </div>
+        <img id="music_button" src="assets/images/play.png" alt="Pause / Play Music" class="animate_hover_slow animate_flash">
+        <audio id="music_BG" src="assets/audio/bg_music.mp3" loop="true"></audio>
     </body>
 </html>

@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         analyser.getByteFrequencyData(dataArray);
         for (let i = 0; i < bufferLength; i++) {
             barHeight = dataArray[i];
-            ctx.fillStyle = "white";
+            ctx.fillStyle = "#A0C0F0";
             ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
             x += barWidth;
         }

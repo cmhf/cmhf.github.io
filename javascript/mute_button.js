@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     muteButton.classList.add("animate_flash");
     muteButton.addEventListener('animationend', () => {
-        muteButton.classList.remove('flash');
+        muteButton.classList.remove('animate_flash');
     }, {once: true});
 });
