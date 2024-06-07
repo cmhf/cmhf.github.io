@@ -48,6 +48,17 @@ body {
     z-index: 1;
 }
 
+#blender_button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
+
 #desmos_button:hover {
     transform: scale(1.1);
     filter: brightness(1.1);
@@ -55,6 +66,11 @@ body {
 
 #music_button:hover {
     transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+#blender_button:hover {
+    transform: scale(1,1);
     filter: brightness(1.1);
 }
 
@@ -91,6 +107,10 @@ body {
 
 .animate_flash {
     animation: flash 0.5s ease-in-out;
+}
+
+.animate_appear {
+    animation: appear 0.5s ease-in-out;
 }
 
 .center {
@@ -133,6 +153,11 @@ body {
     0% {filter: brightness(1);}
     50% {filter: brightness(2);}
     100% {filter: brightness(1);}}
+
+@keyframes appear {
+    0% {filter: opacity(0);}
+    100% {filter: opacity(1);}
+}
 
 h1 {
     color: #4c72e5;
