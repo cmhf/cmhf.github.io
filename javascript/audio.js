@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const dataArray = new Uint8Array(bufferLength);
     const barWidth = canvas.width / bufferLength;
 
+    console.log(canvas.height);
+
     let x = 0;
     function animate() {
         x = 0;
@@ -28,8 +30,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         analyser.getByteFrequencyData(dataArray);
         for (let i = 0; i < bufferLength; i++) {
             barHeight = dataArray[i];
-            ctx.fillStyle = "#A0C0F0";
-            ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
+            ctx.fillStyle = "#A0CCFF";
+            ctx.fillRect(x, 0, barWidth, barHeight);
             x += barWidth;
         }
 
