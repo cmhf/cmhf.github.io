@@ -29,52 +29,56 @@ body {
 
 #music_button {
     position: fixed;
-    bottom: 20px;
+    bottom: -100px;
     right: 20px;
     width: 100px;
     height: 100px;
     cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.5s ease, bottom 0.5s ease;
     z-index: 1;
 }
 
 #desmos_button {
     position: fixed;
-    bottom: 20px;
+    bottom: -100px;
     right: 120px;
     width: 100px;
     height: 100px;
     cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.5s ease, bottom 0.5s ease;
     z-index: 1;
 }
 
 #blender_button {
     position: fixed;
-    bottom: 20px;
+    bottom: -100px;
     left: 20px;
     width: 100px;
     height: 100px;
     cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.5s ease, bottom 0.5s ease;
     z-index: 1;
 }
 
 #github_button {
     position: fixed;
-    bottom: 20px;
+    bottom: -100px;
     left: 120px;
     width: 100px;
     height: 100px;
     cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.5s ease, bottom 0.5s ease;
     z-index: 1;
 }
 
 #home_menu_button {
     position: fixed;
     cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.5s ease;
     z-index: 1;
 }
 
@@ -120,23 +124,25 @@ body {
     animation: appear 0.5s ease-in-out;
 }
 
-.cover {
+#cover {
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
-    bottom: 0;
+    bottom: -50%;
     z-index: -1;
     margin-top: 50%;
     position: fixed;
+    transition: bottom 0.8s ease;
 }
 
-.bg_div {
-    background-color: #00000050;
+#bg_div {
+    background-color: #000215;
     margin: auto;
-    width: 50%;
+    width: 0%;
     text-align: center;
     border-radius: 25px;
     padding: 10px;
+    transition: width 0.5s ease;
 }
 
 .center_div {
@@ -157,18 +163,56 @@ body {
     height: 100vh;
 }
 
-.main_menu_icons .essentials {
-    rotate: 90deg;
+#essential_icon {
+    position: absolute;
+    rotate: 0deg;
     top: 40%;
     left: 50%;
-    height: 10%;
+    height: 5%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    opacity: 0;
+}
+
+#principal_icon {
+    position: absolute;
+    rotate: 0deg;
+    top: 40%;
+    left: 50%;
+    height: 5%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    opacity: 0;
+}
+
+#application_icon {
+    position: absolute;
+    rotate: 0deg;
+    top: 40%;
+    left: 50%;
+    height: 5%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    opacity: 0;
+}
+
+#cybersecurity_icon {
+    position: absolute;
+    rotate: 0deg;
+    top: 40%;
+    left: 50%;
+    height: 5%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    opacity: 0;
 }
 
 #home_menu {
     height: 50%;
     width: 50%;
     cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.5s ease;
 }
 
 #home_menu:hover {
@@ -196,12 +240,13 @@ body {
 @keyframes flash {
     0% {filter: brightness(1);}
     50% {filter: brightness(2);}
-    100% {filter: brightness(1);}}
-    
-    @keyframes appear {
-        0% {filter: opacity(0);}
-        100% {filter: opacity(1);}
-    }
+    100% {filter: brightness(1);}
+}
+
+@keyframes appear {
+    0% {filter: opacity(0);}
+    100% {filter: opacity(1);}
+}
     
 h1 {
     color: #4c72e5;

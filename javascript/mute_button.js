@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     muteButton.addEventListener('click', () => {
         if (playing) {
             audio.pause();
-            muteButton.src = "assets/images/play.png";
+            muteButton.src = "assets/images/media/play.png";
             playing = !(audio.paused);
         } else {
             audio.play();
-            muteButton.src = "assets/images/pause.png";
+            muteButton.src = "assets/images/media/pause.png";
             playing = !(audio.paused);
         }
         console.log(playing);
