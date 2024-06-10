@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Kode Mono", Arial, sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+#desmos_hr {
+    height: 25px;
+    border-width: 0;
+    color: #6fa3cc;
+    background-color: #6fa3cc;
+    width: 100%;
+    margin: 0;
+}
+
+#bg_div {
+    background-color: #000215;
+    margin: auto;
+    width: 0%;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    transition: width 0.5s ease;
+}
+
+.center_div {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    top: 0px;
+    left: 0px;
+}
+ 
+.desmos_div {
+    position: relative;
+    margin-top: 10px;
+}
+
+.desmos_graph {
+    right: 50px;
+    position: absolute;
+    display: flex;
+}
+
+.blue_bg {    
+    background-color: #000525;
+}
+
+@keyframes hover {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(15px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes hover_low {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(7px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes slide-in {
+    0% {transform: translateX(-100%); opacity: 0;}
+    100% {transform: translateX(0%); opacity: 1;}
+}
+
+@keyframes flash {
+    0% {filter: brightness(1);}
+    50% {filter: brightness(2);}
+    100% {filter: brightness(1);}
+}
+
+@keyframes appear {
+    0% {filter: opacity(0);}
+    100% {filter: opacity(1);}
+}
+.animate_hover {
+    animation-name: hover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.animate_hover_slow {
+    animation-name: hover_slow;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.animate_flash {
+    animation: flash 0.5s ease-in-out;
+}
+
+.animate_appear {
+    animation: appear 0.5s ease-in-out;
+}
+
+h1 {
+    color: #4c72e5;
+    z-index: 1;
+}
+
+p {
+    margin-left: 20px;
+    color: #274768;
+}

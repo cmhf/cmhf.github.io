@@ -7,5 +7,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
         Colton Federighi. */
 
     /* Your code here. */
-    
 });

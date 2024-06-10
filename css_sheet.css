@@ -7,6 +7,7 @@ body {
     font-family: "Kode Mono", Arial, sans-serif;
     font-weight: 500;
     overflow: hidden;
+    margin: 0;
 }
 
 #container {
@@ -168,10 +169,11 @@ body {
     rotate: 0deg;
     top: 40%;
     left: 50%;
-    height: 5%;
+    height: 10%;
     transform: translate(-50%, -50%);
     z-index: -2;
-    opacity: 0;
+    opacity: 1;
+    transition: top 0.5s ease, left 0.5s ease;
 }
 
 #principal_icon {
@@ -179,10 +181,11 @@ body {
     rotate: 0deg;
     top: 40%;
     left: 50%;
-    height: 5%;
+    height: 10%;
     transform: translate(-50%, -50%);
     z-index: -2;
-    opacity: 0;
+    opacity: 1;
+    transition: top 0.5s ease, left 0.5s ease;
 }
 
 #application_icon {
@@ -190,10 +193,11 @@ body {
     rotate: 0deg;
     top: 40%;
     left: 50%;
-    height: 5%;
+    height: 10%;
     transform: translate(-50%, -50%);
     z-index: -2;
-    opacity: 0;
+    opacity: 1;
+    transition: top 0.5s ease, left 0.5s ease;
 }
 
 #cybersecurity_icon {
@@ -201,10 +205,11 @@ body {
     rotate: 0deg;
     top: 40%;
     left: 50%;
-    height: 5%;
+    height: 10%;
     transform: translate(-50%, -50%);
     z-index: -2;
-    opacity: 0;
+    opacity: 1;
+    transition: top 0.5s ease, left 0.5s ease;
 }
 
 #home_menu {
