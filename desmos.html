@@ -10,7 +10,7 @@
 
         <!-- Import scripts -->
         
-        <script src="javascript/home_anims.js"></script>
+        <script src="javascript/desmos_anims.js"></script>
         <script src="javascript/hey.js"></script>
     </head>
 
@@ -24,16 +24,30 @@
         </div>
         <hr id="desmos_hr">
         <p>I like to do projects in the Desmos graphing calculator. Here are some example games / art pieces I've made.</p>
+        <div id="desmos_container">
         <div class="desmos_div">
             <h1>Crash Drifter</h1>
-            <iframe src="https://www.desmos.com/calculator/stlvvb54wq?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0 class="desmos_graph"></iframe>
-            <p>Tutorial: Use the red point to steer. Use the blue point to change your speed.</p>
-            <p>Time taken: 5 days.</p>
-            <p>Lines of desmos equations: 82</p>
+            <iframe src="https://www.desmos.com/calculator/stlvvb54wq?embed" style="border: 5px solid #ccc;width: 40%;aspect-ratio: 1; border-radius: 25px;" frameborder=0 class="desmos_graph"></iframe>
+            <p style="width: 50%;">Tutorial: Use the red point to steer. Use the blue point to change your speed.</p>
+            <p style="width: 50%;">Time taken: 5 days.</p>
+            <p style="width: 50%;">Lines of desmos equations: 82</p>
         </div>
+
         <div class="desmos_div">
             <h1>Flappy Desmos</h1>
-            <iframe src="https://www.desmos.com/calculator/ythuzovega?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0 class="desmos_graph"></iframe>
+            <iframe src="https://www.desmos.com/calculator/ythuzovega?embed" style="border: 5px solid #ccc;width: 40%;aspect-ratio: 1; border-radius: 25px;" frameborder=0 class="desmos_graph"></iframe>
+            <p style="width: 50%;">Tutorial: Just play it like flappy bird. Use the white button to jump, and use the orange button to pause / play.</p>
+            <p style="width: 50%;">Time taken: 7 days.</p>
+            <p style="width: 50%;">Lines of desmos equations: 83</p>
         </div>
+        <div style="padding-top: 25px;padding-bottom: 25px;"></div>
+    </div>
+    <a href="index.html">
+        <img id="home_button" src="assets/images/home/icon.png" alt="Home Page" class="animate_hover_slow">
+    </a>
+    <hr id="desmos_hr">
+    <div class="blue_bg" style="width: 100%; height: 20%;">
+        <p style="margin: 0;">Made by Colon Federighi 2024</p>
+    </div>
     </body>
 </html>

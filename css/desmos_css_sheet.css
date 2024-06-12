@@ -9,6 +9,18 @@ body {
     margin: 0;
 }
 
+#home_button {
+    position: fixed;
+    bottom: -100px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    opacity: 0;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.5s ease, bottom 0.5s ease;
+    z-index: 1;
+}
+
 #desmos_hr {
     height: 25px;
     border-width: 0;
@@ -30,23 +42,27 @@ body {
 
 .center_div {
     justify-content: center;
-    display: flex;
     align-items: center;
+    display: flex;
     width: 100%;
     height: 60vh;
     top: 0px;
     left: 0px;
 }
- 
+
 .desmos_div {
-    position: relative;
     margin-top: 10px;
+    height: 50%;
 }
 
 .desmos_graph {
     right: 50px;
     position: absolute;
-    display: flex;
+}
+
+#desmos_container {
+    gap: 400px;
+    display: grid;
 }
 
 .blue_bg {    
