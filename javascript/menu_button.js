@@ -29,9 +29,8 @@ function wait(ms) {
 }
 
 document.addEventListener("DOMContentLoaded", async (event) => {
-
     const mainMenuButton = document.getElementById("home_menu");
-    console.log("Page ready.");
+    console.log("menu_button.js | READY");
     
     mainMenuButton.style.opacity = 0;
     await wait(200);

@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     const blenderButton = document.getElementById("blender_button");
     const githubButton  = document.getElementById("github_button");
 
+    console.log("home_anims.js  | READY")
+
     const bg_div = document.getElementById("bg_div");
 
     bg_div.style.width = "50%"

@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     const audio = document.getElementById("music_BG");
     const muteButton = document.getElementById("music_button");
+
+    console.log("mute_button.js | READY")
+
     let playing = !(audio.paused);
 
     muteButton.addEventListener('click', () => {

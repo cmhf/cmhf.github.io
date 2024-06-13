@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
+    console.log("audio.js       | READY")
+
     const ctx = canvas.getContext("2d");
 
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -20,8 +22,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
     const barWidth = canvas.width / bufferLength;
-
-    console.log(canvas.height);
 
     let x = 0;
     function animate() {
